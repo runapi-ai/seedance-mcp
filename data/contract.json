@@ -32,11 +32,9 @@
             ]
           },
           "duration_seconds": {
-            "enum": [
-              4,
-              8,
-              12
-            ],
+            "max": 12,
+            "min": 4,
+            "type": "integer",
             "required": true
           },
           "output_resolution": {
@@ -62,7 +60,8 @@
           },
           "duration_seconds": {
             "max": 15,
-            "min": 4
+            "min": 4,
+            "type": "integer"
           },
           "output_resolution": {
             "enum": [
@@ -91,7 +90,8 @@
           },
           "duration_seconds": {
             "max": 15,
-            "min": 4
+            "min": 4,
+            "type": "integer"
           },
           "output_resolution": {
             "enum": [
