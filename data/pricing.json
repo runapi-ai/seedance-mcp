@@ -1,0 +1,87 @@
+{
+  "endpoints": {
+    "seedance-1.5-pro/text_to_video": {
+      "unit_price_cents": 4,
+      "billing_config": {
+        "key": "output_resolution",
+        "overrides": {
+          "480p": 1.75,
+          "720p": 3.5,
+          "1080p": 7.5
+        }
+      }
+    },
+    "seedance-2.0/text_to_video": {
+      "unit_price_cents": 102,
+      "billing_config": {
+        "keys": [
+          "input_mode",
+          "output_resolution"
+        ],
+        "matrix": {
+          "generated": {
+            "480p": 19,
+            "720p": 41,
+            "1080p": 102
+          },
+          "video": {
+            "480p": 11.5,
+            "720p": 25,
+            "1080p": 62
+          }
+        }
+      }
+    },
+    "seedance-2.0-fast/text_to_video": {
+      "unit_price_cents": 33,
+      "billing_config": {
+        "keys": [
+          "input_mode",
+          "output_resolution"
+        ],
+        "matrix": {
+          "generated": {
+            "480p": 15.5,
+            "720p": 33
+          },
+          "video": {
+            "480p": 9,
+            "720p": 20
+          }
+        }
+      }
+    },
+    "seedance-v1-lite/text_to_video": {
+      "unit_price_cents": 2,
+      "billing_config": {
+        "key": "output_resolution",
+        "overrides": {
+          "480p": 0.4,
+          "720p": 0.9,
+          "1080p": 2
+        }
+      }
+    },
+    "seedance-v1-pro/text_to_video": {
+      "unit_price_cents": 3,
+      "billing_config": {
+        "key": "output_resolution",
+        "overrides": {
+          "480p": 0.56,
+          "720p": 1.2,
+          "1080p": 2.8
+        }
+      }
+    },
+    "seedance-v1-pro-fast/text_to_video": {
+      "unit_price_cents": 2,
+      "billing_config": {
+        "key": "output_resolution",
+        "overrides": {
+          "720p": 0.64,
+          "1080p": 1.44
+        }
+      }
+    }
+  }
+}

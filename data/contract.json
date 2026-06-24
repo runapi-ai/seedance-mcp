@@ -1,0 +1,184 @@
+{
+  "catalog_models": [
+    "seedance-1.5-pro",
+    "seedance-2.0",
+    "seedance-2.0-fast",
+    "seedance-v1-lite",
+    "seedance-v1-pro",
+    "seedance-v1-pro-fast"
+  ],
+  "actions": {
+    "seedance/text-to-video": {
+      "model": "Seedance",
+      "endpoint": "text_to_video",
+      "models": [
+        "seedance-1.5-pro",
+        "seedance-2.0",
+        "seedance-2.0-fast",
+        "seedance-v1-lite",
+        "seedance-v1-pro",
+        "seedance-v1-pro-fast"
+      ],
+      "fields_by_model": {
+        "seedance-1.5-pro": {
+          "aspect_ratio": {
+            "enum": [
+              "1:1",
+              "4:3",
+              "3:4",
+              "16:9",
+              "9:16",
+              "21:9"
+            ]
+          },
+          "duration_seconds": {
+            "enum": [
+              4,
+              8,
+              12
+            ],
+            "required": true
+          },
+          "output_resolution": {
+            "enum": [
+              "480p",
+              "720p",
+              "1080p"
+            ]
+          },
+          "source_image_urls": {}
+        },
+        "seedance-2.0": {
+          "aspect_ratio": {
+            "enum": [
+              "1:1",
+              "4:3",
+              "3:4",
+              "16:9",
+              "9:16",
+              "21:9",
+              "auto"
+            ]
+          },
+          "duration_seconds": {
+            "max": 15,
+            "min": 4
+          },
+          "output_resolution": {
+            "enum": [
+              "480p",
+              "720p",
+              "1080p"
+            ]
+          },
+          "last_frame_image_url": {},
+          "reference_audio_urls": {},
+          "reference_image_urls": {},
+          "reference_video_urls": {},
+          "first_frame_image_url": {}
+        },
+        "seedance-2.0-fast": {
+          "aspect_ratio": {
+            "enum": [
+              "1:1",
+              "4:3",
+              "3:4",
+              "16:9",
+              "9:16",
+              "21:9",
+              "auto"
+            ]
+          },
+          "duration_seconds": {
+            "max": 15,
+            "min": 4
+          },
+          "output_resolution": {
+            "enum": [
+              "480p",
+              "720p"
+            ]
+          },
+          "last_frame_image_url": {},
+          "reference_audio_urls": {},
+          "reference_image_urls": {},
+          "reference_video_urls": {},
+          "first_frame_image_url": {}
+        },
+        "seedance-v1-lite": {
+          "aspect_ratio": {
+            "enum": [
+              "1:1",
+              "4:3",
+              "3:4",
+              "16:9",
+              "9:16",
+              "9:21"
+            ]
+          },
+          "duration_seconds": {
+            "enum": [
+              5,
+              10
+            ],
+            "required": true
+          },
+          "output_resolution": {
+            "enum": [
+              "480p",
+              "720p",
+              "1080p"
+            ]
+          },
+          "last_frame_image_url": {},
+          "first_frame_image_url": {}
+        },
+        "seedance-v1-pro": {
+          "aspect_ratio": {
+            "enum": [
+              "1:1",
+              "4:3",
+              "3:4",
+              "16:9",
+              "9:16",
+              "21:9"
+            ]
+          },
+          "duration_seconds": {
+            "enum": [
+              5,
+              10
+            ],
+            "required": true
+          },
+          "output_resolution": {
+            "enum": [
+              "480p",
+              "720p",
+              "1080p"
+            ]
+          },
+          "first_frame_image_url": {}
+        },
+        "seedance-v1-pro-fast": {
+          "duration_seconds": {
+            "enum": [
+              5,
+              10
+            ],
+            "required": true
+          },
+          "output_resolution": {
+            "enum": [
+              "720p",
+              "1080p"
+            ]
+          },
+          "first_frame_image_url": {
+            "required": true
+          }
+        }
+      }
+    }
+  }
+}
