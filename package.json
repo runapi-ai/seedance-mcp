@@ -1,7 +1,7 @@
 {
   "name": "@runapi.ai/seedance-mcp",
-  "version": "0.1.0",
-  "description": "RunAPI MCP server for one model line: create tasks, poll status, and check pricing with one API key.",
+  "version": "0.1.1",
+  "description": "Seedance MCP server for RunAPI — create Seedance AI tasks (text to video), poll status, and check pricing across 6 models with one API key.",
   "type": "module",
   "main": "dist/src/index.js",
   "bin": {
@@ -27,7 +27,14 @@
     "runapi",
     "mcp",
     "model-context-protocol",
-    "ai"
+    "ai",
+    "seedance",
+    "seedance-mcp",
+    "seedance-ai",
+    "seedance-api",
+    "video-generation",
+    "ai-video",
+    "text-to-video"
   ],
   "author": "RunAPI",
   "license": "Apache-2.0",
