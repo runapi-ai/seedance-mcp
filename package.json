@@ -1,7 +1,7 @@
 {
   "name": "@runapi.ai/seedance-mcp",
-  "version": "0.1.5",
-  "description": "RunAPI Seedance MCP server for video generation: create tasks, poll results, and check pricing across 6 model variants from Claude Code, Codex, Cursor, and VS Code.",
+  "version": "0.1.6",
+  "description": "RunAPI Seedance MCP server for video generation: create tasks, poll results, and check pricing across 7 model variants from Claude Code, Codex, Cursor, and VS Code.",
   "type": "module",
   "main": "dist/src/index.js",
   "bin": {

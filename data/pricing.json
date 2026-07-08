@@ -21,6 +21,25 @@
         }
       }
     },
+    "seedance-2-mini/text_to_video": {
+      "unit_price_cents": 57,
+      "billing_config": {
+        "keys": [
+          "pricing_input_mode",
+          "output_resolution"
+        ],
+        "matrix": {
+          "standard": {
+            "480p": 19,
+            "720p": 41
+          },
+          "reference": {
+            "480p": 27,
+            "720p": 56.25
+          }
+        }
+      }
+    },
     "seedance-2.0/text_to_video": {
       "unit_price_cents": 102,
       "billing_config": {
