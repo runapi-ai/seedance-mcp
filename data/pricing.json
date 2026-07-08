@@ -41,7 +41,7 @@
       }
     },
     "seedance-2.0/text_to_video": {
-      "unit_price_cents": 102,
+      "unit_price_cents": 208,
       "billing_config": {
         "keys": [
           "input_mode",
@@ -51,7 +51,8 @@
           "generated": {
             "480p": 19,
             "720p": 41,
-            "1080p": 102
+            "1080p": 102,
+            "4k": 208
           },
           "video": {
             "480p": 11.5,
