@@ -12,6 +12,7 @@
     "seedance/text-to-video": {
       "model": "Seedance",
       "endpoint": "text_to_video",
+      "task_type": "asynchronous",
       "models": [
         "seedance-1.5-pro",
         "seedance-2-mini",
@@ -64,7 +65,8 @@
             "type": "boolean"
           },
           "source_image_urls": {
-            "type": "array"
+            "type": "array",
+            "max_items": 2
           },
           "lock_camera": {
             "type": "boolean"
@@ -114,13 +116,16 @@
             "type": "string"
           },
           "reference_image_urls": {
-            "type": "array"
+            "type": "array",
+            "max_items": 9
           },
           "reference_video_urls": {
-            "type": "array"
+            "type": "array",
+            "max_items": 3
           },
           "reference_audio_urls": {
-            "type": "array"
+            "type": "array",
+            "max_items": 3
           },
           "web_search": {
             "type": "boolean"
@@ -175,13 +180,16 @@
             "type": "string"
           },
           "reference_image_urls": {
-            "type": "array"
+            "type": "array",
+            "max_items": 9
           },
           "reference_video_urls": {
-            "type": "array"
+            "type": "array",
+            "max_items": 3
           },
           "reference_audio_urls": {
-            "type": "array"
+            "type": "array",
+            "max_items": 3
           },
           "web_search": {
             "type": "boolean"
@@ -234,13 +242,16 @@
             "type": "string"
           },
           "reference_image_urls": {
-            "type": "array"
+            "type": "array",
+            "max_items": 9
           },
           "reference_video_urls": {
-            "type": "array"
+            "type": "array",
+            "max_items": 3
           },
           "reference_audio_urls": {
-            "type": "array"
+            "type": "array",
+            "max_items": 3
           },
           "web_search": {
             "type": "boolean"

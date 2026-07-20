@@ -1,5 +1,11 @@
 # Changelog
 
+## [v0.1.8](https://github.com/runapi-ai/seedance-mcp/releases/tag/v0.1.8) - 2026-07-20
+
+### Fixed
+- Validate model-specific image, video, and audio collection limits from the generated contract.
+
+
 ## [v0.1.7](https://github.com/runapi-ai/seedance-mcp/releases/tag/v0.1.7) - 2026-07-08
 
 ### Changed
