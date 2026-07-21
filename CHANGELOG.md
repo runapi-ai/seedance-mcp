@@ -1,5 +1,14 @@
 # Changelog
 
+## [v0.1.9](https://github.com/runapi-ai/seedance-mcp/releases/tag/v0.1.9) - 2026-07-21
+
+### Added
+- Add optional `seed` support for Seedance 1.5 Pro and V1 Pro Fast tools with integer range validation.
+
+### Changed
+- Refresh the generated server for current contract-driven endpoint handling.
+
+
 ## [v0.1.8](https://github.com/runapi-ai/seedance-mcp/releases/tag/v0.1.8) - 2026-07-20
 
 ### Fixed
