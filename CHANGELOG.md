@@ -1,5 +1,15 @@
 # Changelog
 
+## [v0.1.10](https://github.com/runapi-ai/seedance-mcp/releases/tag/v0.1.10) - 2026-07-29
+
+### Removed
+- Remove seedance-v1-lite from the Seedance MCP contract and pricing data.
+  Migration: Use seedance-v1-pro or another supported Seedance model.
+
+### Fixed
+- Refresh supported Seedance pricing metadata from the current RunAPI catalog.
+
+
 ## [v0.1.9](https://github.com/runapi-ai/seedance-mcp/releases/tag/v0.1.9) - 2026-07-21
 
 ### Added

@@ -4,7 +4,6 @@
     "seedance-2-mini",
     "seedance-2.0",
     "seedance-2.0-fast",
-    "seedance-v1-lite",
     "seedance-v1-pro",
     "seedance-v1-pro-fast"
   ],
@@ -18,9 +17,84 @@
         "seedance-2-mini",
         "seedance-2.0",
         "seedance-2.0-fast",
-        "seedance-v1-lite",
         "seedance-v1-pro",
         "seedance-v1-pro-fast"
+      ],
+      "rules": [
+        {
+          "when": {
+            "model": "seedance-1.5-pro"
+          },
+          "forbidden": [
+            "first_frame_image_url",
+            "last_frame_image_url",
+            "reference_image_urls",
+            "reference_video_urls",
+            "reference_audio_urls",
+            "web_search"
+          ]
+        },
+        {
+          "when": {
+            "model": "seedance-2-mini"
+          },
+          "forbidden": [
+            "source_image_urls",
+            "lock_camera",
+            "seed",
+            "enable_safety_checker"
+          ]
+        },
+        {
+          "when": {
+            "model": "seedance-2.0"
+          },
+          "forbidden": [
+            "source_image_urls",
+            "lock_camera",
+            "seed"
+          ]
+        },
+        {
+          "when": {
+            "model": "seedance-2.0-fast"
+          },
+          "forbidden": [
+            "source_image_urls",
+            "lock_camera",
+            "seed"
+          ]
+        },
+        {
+          "when": {
+            "model": "seedance-v1-pro"
+          },
+          "forbidden": [
+            "source_image_urls",
+            "last_frame_image_url",
+            "reference_image_urls",
+            "reference_video_urls",
+            "reference_audio_urls",
+            "web_search",
+            "generate_audio"
+          ]
+        },
+        {
+          "when": {
+            "model": "seedance-v1-pro-fast"
+          },
+          "forbidden": [
+            "aspect_ratio",
+            "source_image_urls",
+            "lock_camera",
+            "last_frame_image_url",
+            "reference_image_urls",
+            "reference_video_urls",
+            "reference_audio_urls",
+            "web_search",
+            "generate_audio"
+          ]
+        }
       ],
       "fields_by_model": {
         "seedance-1.5-pro": {
@@ -260,59 +334,6 @@
           },
           "web_search": {
             "type": "boolean"
-          }
-        },
-        "seedance-v1-lite": {
-          "prompt": {
-            "type": "string"
-          },
-          "model": {
-            "type": "string"
-          },
-          "callback_url": {
-            "type": "string"
-          },
-          "aspect_ratio": {
-            "type": "string",
-            "enum": [
-              "1:1",
-              "4:3",
-              "3:4",
-              "16:9",
-              "9:16",
-              "9:21"
-            ]
-          },
-          "output_resolution": {
-            "type": "string",
-            "enum": [
-              "480p",
-              "720p",
-              "1080p"
-            ]
-          },
-          "duration_seconds": {
-            "type": "integer",
-            "enum": [
-              5,
-              10
-            ],
-            "required": true
-          },
-          "enable_safety_checker": {
-            "type": "boolean"
-          },
-          "lock_camera": {
-            "type": "boolean"
-          },
-          "first_frame_image_url": {
-            "type": "string"
-          },
-          "last_frame_image_url": {
-            "type": "string"
-          },
-          "seed": {
-            "type": "integer"
           }
         },
         "seedance-v1-pro": {
