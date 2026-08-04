@@ -1,5 +1,11 @@
 # Changelog
 
+## [v0.1.11](https://github.com/runapi-ai/seedance-mcp/releases/tag/v0.1.11) - 2026-08-04
+
+### Changed
+- Resolve MCP prices from the RunAPI Price Schedule API instead of embedded package data.
+
+
 ## [v0.1.10](https://github.com/runapi-ai/seedance-mcp/releases/tag/v0.1.10) - 2026-07-29
 
 ### Removed

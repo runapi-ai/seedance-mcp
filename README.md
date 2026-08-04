@@ -74,9 +74,9 @@ Ready-made examples are in [`examples/`](examples/) for Claude, Cursor, Windsurf
 
 | Tool | Auth | Purpose |
 |---|---|---|
-| `text_to_video` | Yes | Create a Seedance text to video task and optionally wait for a terminal status. Returns the task id, status, output URLs, and pricing snapshot. |
+| `text_to_video` | Yes | Create a Seedance text to video task and optionally wait for a terminal status. Returns the task id, status, and output URLs. |
 | `get_task` | Yes | Fetch the current status and latest payload for an existing task. |
-| `check_pricing` | No | Look up the current pricing snapshot for a Seedance model and endpoint. |
+| `check_pricing` | No | Look up current pricing for a Seedance model and endpoint. |
 
 ---
 
