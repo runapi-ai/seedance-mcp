@@ -13,7 +13,7 @@
   <a href="https://github.com/runapi-ai/seedance-mcp"><img src="https://img.shields.io/badge/GitHub-runapi--ai%2Fseedance--mcp-24292f?style=flat-square" alt="GitHub repository"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-Apache_2.0-blue?style=flat-square" alt="Apache-2.0 license"></a>
   <img src="https://img.shields.io/badge/Type-MCP_Server-blue?style=flat-square" alt="MCP Server">
-  <img src="https://img.shields.io/badge/Models-6-16a34a?style=flat-square" alt="6 models">
+  <img src="https://img.shields.io/badge/Models-7-16a34a?style=flat-square" alt="7 models">
 </p>
 
 <p align="center">
@@ -30,7 +30,7 @@
 ## Why This Package?
 
 `@runapi.ai/seedance-mcp` is a focused Model Context Protocol server for the **Seedance** model line on RunAPI.
-It gives MCP-compatible assistants direct access to 1 endpoint and 6 model variants without loading the full RunAPI catalog.
+It gives MCP-compatible assistants direct access to 1 endpoint and 7 model variants without loading the full RunAPI catalog.
 
 Use this per-model server when an agent should stay scoped to Seedance. Use [`@runapi.ai/mcp`](https://github.com/runapi-ai/mcp) when one assistant should discover every RunAPI model line.
 
@@ -82,11 +82,11 @@ Ready-made examples are in [`examples/`](examples/) for Claude, Cursor, Windsurf
 
 ## Models
 
-Seedance covers 6 model variants across 1 endpoint. Each tool accepts the models listed for it:
+Seedance covers 7 model variants across 1 endpoint. Each tool accepts the models listed for it:
 
 | Tool | Models |
 |---|---|
-| `text_to_video` | `seedance-1.5-pro`, `seedance-2-mini`, `seedance-2.0`, `seedance-2.0-fast`, `seedance-v1-pro`, `seedance-v1-pro-fast` |
+| `text_to_video` | `seedance-1.5-pro`, `seedance-2-mini`, `seedance-2.0`, `seedance-2.0-fast`, `seedance-2.5`, `seedance-v1-pro`, `seedance-v1-pro-fast` |
 
 Model availability can change between releases. Use `check_pricing` or the [Seedance model page](https://runapi.ai/models/seedance) for the current catalog view.
 

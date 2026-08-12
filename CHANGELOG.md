@@ -1,5 +1,11 @@
 # Changelog
 
+## [v0.1.12](https://github.com/runapi-ai/seedance-mcp/releases/tag/v0.1.12) - 2026-08-12
+
+### Added
+- Expose Seedance 2.5 fields and validation through the Seedance MCP server.
+
+
 ## [v0.1.11](https://github.com/runapi-ai/seedance-mcp/releases/tag/v0.1.11) - 2026-08-04
 
 ### Changed

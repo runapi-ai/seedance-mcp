@@ -73,7 +73,7 @@ describe("seedance stdio MCP server", () => {
 
     // Every advertised model must price without naming an endpoint, even one
     // that only lives on a non-primary endpoint of a multi-endpoint line.
-    for (const model of ["seedance-1.5-pro","seedance-2-mini","seedance-2.0","seedance-2.0-fast","seedance-v1-pro","seedance-v1-pro-fast"]) {
+    for (const model of ["seedance-1.5-pro","seedance-2-mini","seedance-2.0","seedance-2.0-fast","seedance-2.5","seedance-v1-pro","seedance-v1-pro-fast"]) {
       const priced = await client.callTool({ name: "check_pricing", arguments: { model } });
       const pricedContent = priced.content?.[0];
       if (!pricedContent || pricedContent.type !== "text") {
