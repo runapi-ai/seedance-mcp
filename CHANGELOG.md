@@ -1,5 +1,11 @@
 # Changelog
 
+## [v0.2.0](https://github.com/runapi-ai/seedance-mcp/releases/tag/v0.2.0) - 2026-08-21
+
+### Added
+- Accept 1080p output resolution for Seedance 2.5 video generation.
+
+
 ## [v0.1.12](https://github.com/runapi-ai/seedance-mcp/releases/tag/v0.1.12) - 2026-08-12
 
 ### Added
