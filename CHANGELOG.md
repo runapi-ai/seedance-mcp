@@ -1,5 +1,15 @@
 # Changelog
 
+## [v0.3.0](https://github.com/runapi-ai/seedance-mcp/releases/tag/v0.3.0) - 2026-09-30
+
+### Changed
+- Send tool arguments to the service without local model, enum, range, required-field, or cross-field validation. Tool descriptions still list declared types and known values.
+  Migration: Invalid arguments now return the service's error, including its message, instead of a local tool-input rejection.
+- Accept only auto for aspect_ratio when seedance-2.5 receives first_frame_image_url, and document the 720p output_resolution default and the generate_audio defaults on text_to_video.
+  Migration: Set aspect_ratio to auto, or omit it, when you pass first_frame_image_url to seedance-2.5.
+- Depend on @runapi.ai/mcp-core 0.4.5 and send task creation and lookup to each tool's published route.
+
+
 ## [v0.2.0](https://github.com/runapi-ai/seedance-mcp/releases/tag/v0.2.0) - 2026-08-21
 
 ### Added

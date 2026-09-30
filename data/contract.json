@@ -22,133 +22,6 @@
         "seedance-v1-pro",
         "seedance-v1-pro-fast"
       ],
-      "rules": [
-        {
-          "when": {
-            "model": "seedance-2.5",
-            "first_frame_image_url": {
-              "present": true
-            }
-          },
-          "forbidden": [
-            "reference_image_urls",
-            "reference_video_urls",
-            "reference_audio_urls"
-          ]
-        },
-        {
-          "when": {
-            "model": "seedance-2.5",
-            "last_frame_image_url": {
-              "present": true
-            }
-          },
-          "required": [
-            "first_frame_image_url"
-          ],
-          "forbidden": [
-            "reference_image_urls",
-            "reference_video_urls",
-            "reference_audio_urls"
-          ]
-        },
-        {
-          "when": {
-            "model": "seedance-1.5-pro"
-          },
-          "forbidden": [
-            "first_frame_image_url",
-            "last_frame_image_url",
-            "reference_image_urls",
-            "reference_video_urls",
-            "reference_audio_urls",
-            "web_search",
-            "return_last_frame",
-            "output_format"
-          ]
-        },
-        {
-          "when": {
-            "model": "seedance-2-mini"
-          },
-          "forbidden": [
-            "source_image_urls",
-            "lock_camera",
-            "seed",
-            "enable_safety_checker",
-            "return_last_frame",
-            "output_format"
-          ]
-        },
-        {
-          "when": {
-            "model": "seedance-2.0"
-          },
-          "forbidden": [
-            "source_image_urls",
-            "lock_camera",
-            "seed",
-            "return_last_frame",
-            "output_format"
-          ]
-        },
-        {
-          "when": {
-            "model": "seedance-2.0-fast"
-          },
-          "forbidden": [
-            "source_image_urls",
-            "lock_camera",
-            "seed",
-            "return_last_frame",
-            "output_format"
-          ]
-        },
-        {
-          "when": {
-            "model": "seedance-2.5"
-          },
-          "forbidden": [
-            "source_image_urls",
-            "lock_camera",
-            "seed"
-          ]
-        },
-        {
-          "when": {
-            "model": "seedance-v1-pro"
-          },
-          "forbidden": [
-            "source_image_urls",
-            "last_frame_image_url",
-            "reference_image_urls",
-            "reference_video_urls",
-            "reference_audio_urls",
-            "web_search",
-            "generate_audio",
-            "return_last_frame",
-            "output_format"
-          ]
-        },
-        {
-          "when": {
-            "model": "seedance-v1-pro-fast"
-          },
-          "forbidden": [
-            "aspect_ratio",
-            "source_image_urls",
-            "lock_camera",
-            "last_frame_image_url",
-            "reference_image_urls",
-            "reference_video_urls",
-            "reference_audio_urls",
-            "web_search",
-            "generate_audio",
-            "return_last_frame",
-            "output_format"
-          ]
-        }
-      ],
       "fields_by_model": {
         "seedance-1.5-pro": {
           "prompt": {
@@ -177,7 +50,8 @@
               "480p",
               "720p",
               "1080p"
-            ]
+            ],
+            "default": "720p"
           },
           "duration_seconds": {
             "type": "integer",
@@ -186,7 +60,8 @@
             "required": true
           },
           "generate_audio": {
-            "type": "boolean"
+            "type": "boolean",
+            "default": false
           },
           "enable_safety_checker": {
             "type": "boolean"
@@ -231,7 +106,8 @@
             "enum": [
               "480p",
               "720p"
-            ]
+            ],
+            "default": "720p"
           },
           "duration_seconds": {
             "type": "integer",
@@ -240,7 +116,8 @@
             "default": 5
           },
           "generate_audio": {
-            "type": "boolean"
+            "type": "boolean",
+            "default": true
           },
           "first_frame_image_url": {
             "type": "string"
@@ -293,7 +170,8 @@
               "720p",
               "1080p",
               "4k"
-            ]
+            ],
+            "default": "720p"
           },
           "duration_seconds": {
             "type": "integer",
@@ -356,7 +234,8 @@
             "enum": [
               "480p",
               "720p"
-            ]
+            ],
+            "default": "720p"
           },
           "duration_seconds": {
             "type": "integer",
@@ -556,7 +435,8 @@
               "480p",
               "720p",
               "1080p"
-            ]
+            ],
+            "default": "720p"
           },
           "duration_seconds": {
             "type": "integer",
@@ -594,7 +474,8 @@
             "enum": [
               "720p",
               "1080p"
-            ]
+            ],
+            "default": "720p"
           },
           "duration_seconds": {
             "type": "integer",
