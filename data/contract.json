@@ -99,7 +99,8 @@
               "9:16",
               "21:9",
               "auto"
-            ]
+            ],
+            "default": "16:9"
           },
           "output_resolution": {
             "type": "string",
@@ -111,9 +112,23 @@
           },
           "duration_seconds": {
             "type": "integer",
-            "max": 15,
-            "min": 4,
-            "default": 5
+            "enum": [
+              -1,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15
+            ],
+            "default": 5,
+            "description": "Video duration in seconds; -1 selects duration automatically."
           },
           "generate_audio": {
             "type": "boolean",
@@ -161,7 +176,8 @@
               "9:16",
               "21:9",
               "auto"
-            ]
+            ],
+            "default": "16:9"
           },
           "output_resolution": {
             "type": "string",
@@ -175,12 +191,27 @@
           },
           "duration_seconds": {
             "type": "integer",
-            "max": 15,
-            "min": 4,
-            "default": 5
+            "enum": [
+              -1,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15
+            ],
+            "default": 5,
+            "description": "Video duration in seconds; -1 selects duration automatically."
           },
           "generate_audio": {
-            "type": "boolean"
+            "type": "boolean",
+            "default": true
           },
           "enable_safety_checker": {
             "type": "boolean"
@@ -227,7 +258,8 @@
               "9:16",
               "21:9",
               "auto"
-            ]
+            ],
+            "default": "16:9"
           },
           "output_resolution": {
             "type": "string",
@@ -239,12 +271,27 @@
           },
           "duration_seconds": {
             "type": "integer",
-            "max": 15,
-            "min": 4,
-            "default": 5
+            "enum": [
+              -1,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15
+            ],
+            "default": 5,
+            "description": "Video duration in seconds; -1 selects duration automatically."
           },
           "generate_audio": {
-            "type": "boolean"
+            "type": "boolean",
+            "default": true
           },
           "enable_safety_checker": {
             "type": "boolean"
@@ -274,7 +321,7 @@
         "seedance-2.5": {
           "prompt": {
             "type": "string",
-            "max": 30000,
+            "max": 20480,
             "min": 3,
             "length": true,
             "required": true,

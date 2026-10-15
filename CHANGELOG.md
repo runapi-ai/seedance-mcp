@@ -1,5 +1,13 @@
 # Changelog
 
+## [v0.3.1](https://github.com/runapi-ai/seedance-mcp/releases/tag/v0.3.1) - 2026-10-15
+
+### Changed
+- seedance-2.0, seedance-2.0-fast, and seedance-2-mini text_to_video accept duration_seconds -1 (automatic) in addition to 4-15.
+- Declare the 16:9 server default for aspect_ratio on seedance-2.0, seedance-2.0-fast and seedance-2-mini, and the true default for generate_audio on seedance-2.0 and seedance-2.0-fast text_to_video.
+- Seedance 2.5 prompts now accept up to 20480 characters.
+
+
 ## [v0.3.0](https://github.com/runapi-ai/seedance-mcp/releases/tag/v0.3.0) - 2026-09-30
 
 ### Changed
